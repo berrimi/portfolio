@@ -1,3 +1,4 @@
+<!-- ./index.html -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +6,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BERRIMI Outmane — Software Engineer</title>
-    <meta name="description"
-        content="Software engineering student building clean, pragmatic web tools. Python, Laravel, React developer based in Fès, Morocco.">
+    <meta name="description" content="Fifth-year Software Engineering student building pragmatic tools with Python, Laravel, and React.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico">
 
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="BERRIMI Outmane — Software Engineer">
-    <meta property="og:description" content="Building clean, pragmatic web tools. Python + Laravel + React.">
+    <meta property="og:description" content="Fifth-year Software Engineering student building pragmatic tools with Python, Laravel, and React.">
+    <meta property="og:image" content="/og-image.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://berrimi.github.io/portfolio/">
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
 
-        <!-- Link to external JavaScript -->
+    <!-- Link to external JavaScript -->
     <script src="script.js" defer></script>
 </head>
 
@@ -25,193 +35,198 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">BERRIMI</div>
-                <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+                <div class="logo">BERRIMI Outmane</div>
+                <div class="nav-right">
+                    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" aria-pressed="false">
+                        <span class="theme-icon">◐</span>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle menu">☰</button>
+                </div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="resume.pdf" class="btn" download>Download Résumé</a></li>
+                    <li><a href="public/cv/resume.pdf" class="btn" download>Download Résumé</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>BERRIMI Outmane — Software Engineer (Full-Stack)</h1>
-            <p class="hero-subtitle">Building clean, pragmatic web tools. Python + Laravel + React. Creator of
-                <em>Tarjimly</em> — a realtime Arabic transliteration tool.</p>
-            <div class="hero-cta">
-                <a href="resume.pdf" class="btn" download>Download Résumé →</a>
-                <a href="#projects" class="btn btn-ghost">View Projects</a>
+    <!-- Main Content -->
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>BERRIMI Outmane — Software Engineer</h1>
+                <p class="hero-subtitle">Fifth-year Software Engineering student at ISGA Fès. I build pragmatic web tools and desktop utilities using Python, Laravel, and React.</p>
+                <div class="hero-cta">
+                    <a href="public/cv/resume.pdf" class="btn" download>Download Résumé →</a>
+                    <a href="#projects" class="btn btn-ghost">View Projects</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About -->
-    <section id="about">
-        <div class="container">
-            <h2 class="section-title">About</h2>
-            <div class="about-content">
-                <p>I'm a 5th-year software engineering student at ISGA FES, based in Fès, Morocco. I build user-focused
-                    tools and small apps — from Tkinter desktop utilities to Laravel web systems. I like neat code,
-                    pragmatic UX, and solving problems with a minimal aesthetic.</p>
-                <p style="margin-top: 16px;">GitHub: <a href="https://github.com/berrimi" target="_blank"
-                        rel="noopener noreferrer">github.com/berrimi</a></p>
+        <!-- About -->
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p>I'm a fifth-year software engineering student at ISGA, based in Fès, Morocco. I build user-focused tools — from Tkinter desktop utilities to Laravel web systems and React frontends. My projects emphasize clarity, pragmatic UX, and maintainable code.</p>
+                    <p style="margin-top: 16px;">View my work on GitHub: <a href="https://github.com/berrimi" target="_blank" rel="noopener noreferrer">github.com/berrimi</a></p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills -->
-    <section id="skills" style="background: var(--surface);">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-grid">
-                <span class="skill-tag">Python (Tkinter, pandas, openpyxl)</span>
-                <span class="skill-tag">JavaScript (React)</span>
-                <span class="skill-tag">PHP (Laravel, Spatie, Breeze)</span>
-                <span class="skill-tag">Tailwind CSS</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Docker (basic)</span>
-                <span class="skill-tag">UI/UX fundamentals</span>
+        <!-- Skills -->
+        <section id="skills" class="alt-bg">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Tkinter</span>
+                    <span class="skill-tag">pandas</span>
+                    <span class="skill-tag">openpyxl</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Laravel</span>
+                    <span class="skill-tag">Spatie</span>
+                    <span class="skill-tag">Breeze</span>
+                    <span class="skill-tag">Tailwind CSS</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Docker (basic)</span>
+                    <span class="skill-tag">UI/UX fundamentals</span>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1: Tarjimly -->
-                <article class="project-card">
-                    <div class="project-image" aria-label="Tarjimly project preview">
-                        ع
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Tarjimly — Real-time Arabic Transliteration</h3>
-                        <p class="project-description">Desktop app built with Python/Tkinter that converts English
-                            transliteration to Arabic script live. Features hotkeys, system tray, and live UI built with
-                            ttkbootstrap.</p>
-                        <div class="project-stack">
-                            <span class="stack-tag">Python</span>
-                            <span class="stack-tag">Tkinter</span>
-                            <span class="stack-tag">ttkbootstrap</span>
+        <!-- Projects -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1: Tarjimly -->
+                    <article class="project-card">
+                        <div class="project-image" aria-label="Tarjimly - Real-time Arabic Transliteration">
+                            <span style="font-size: 64px;">ع</span>
                         </div>
-                        <div class="project-links">
-                            <a href="https://github.com/berrimi" target="_blank" rel="noopener noreferrer">Repository
-                                →</a>
+                        <div class="project-content">
+                            <h3 class="project-title">Tarjimly — Real-time Arabic Transliteration</h3>
+                            <p class="project-description">A desktop app that converts Latin-script Arabic transliteration into Arabic script in real-time. Features hotkeys, system tray integration, and a compact UI built with ttkbootstrap. Useful for writers, translators, and anyone typing Arabic using a Latin keyboard.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">Tkinter</span>
+                                <span class="stack-tag">ttkbootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/berrimi/tarjimly" target="_blank" rel="noopener noreferrer">View code →</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 2: Placeholder -->
-                <article class="project-card">
-                    <div class="project-image" aria-label="Project preview">
-                        🔧
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project — Add Title Here</h3>
-                        <p class="project-description">Add description of your second project here. Include what problem
-                            it solves and the technologies you used.</p>
-                        <div class="project-stack">
-                            <span class="stack-tag">Tech 1</span>
-                            <span class="stack-tag">Tech 2</span>
+                    <!-- Project 2: Vehicle Insurance -->
+                    <article class="project-card">
+                        <div class="project-image" aria-label="Vehicle Insurance Management System">
+                            <span style="font-size: 64px;">🚗</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">Repository →</a>
+                        <div class="project-content">
+                            <h3 class="project-title">Vehicle Insurance Management System</h3>
+                            <p class="project-description">A Laravel-based system to manage vehicle insurance policies, automatic period calculation, and client forms. Built with Laravel and Tailwind CSS; includes forms with automatic date period calculation, role-based access (Spatie), and authentication with Laravel Breeze.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">PHP</span>
+                                <span class="stack-tag">Laravel</span>
+                                <span class="stack-tag">Tailwind CSS</span>
+                                <span class="stack-tag">Spatie</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/berrimi/vehicle-insurance" target="_blank" rel="noopener noreferrer">View code →</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <!-- Project 3: Placeholder -->
-                <article class="project-card">
-                    <div class="project-image" aria-label="Project preview">
-                        💡
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project — Add Title Here</h3>
-                        <p class="project-description">Add description of your third project here. Include what problem
-                            it solves and the technologies you used.</p>
-                        <div class="project-stack">
-                            <span class="stack-tag">Tech 1</span>
-                            <span class="stack-tag">Tech 2</span>
+                    <!-- Project 3: Collaborative App -->
+                    <article class="project-card">
+                        <div class="project-image" aria-label="Collaborative App - University Project">
+                            <span style="font-size: 64px;">👥</span>
                         </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">Repository →</a>
+                        <div class="project-content">
+                            <h3 class="project-title">Collaborative App — University Project</h3>
+                            <p class="project-description">A group project combining student management and task collaboration features. Integrates task assignment, file sharing, and role-based permissions with a clean component library and REST APIs supporting the single-page frontend.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Laravel</span>
+                                <span class="stack-tag">React</span>
+                                <span class="stack-tag">Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/berrimi/collab-app" target="_blank" rel="noopener noreferrer">View code →</a>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience -->
-    <section id="experience" style="background: var(--surface);">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-list">
-                <article class="experience-item">
-                    <h3 class="experience-title">Internship — Alstom</h3>
-                    <p class="experience-meta">Supervisor: Souad EL JAMALI</p>
-                    <p class="experience-description">Add brief summary of your work and accomplishments at Alstom here.
-                    </p>
-                </article>
+        <!-- Experience -->
+        <section id="experience" class="alt-bg">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-list">
+                    <article class="experience-item">
+                        <h3 class="experience-title">Internship — Alstom</h3>
+                        <p class="experience-meta">Supervisor: Souad EL JAMALI</p>
+                        <p class="experience-description">Worked on internal tooling and data processing tasks. Implemented features using Python and maintained Excel-based reporting using pandas and openpyxl.</p>
+                    </article>
 
-                <article class="experience-item">
-                    <h3 class="experience-title">Internship — OnWork, Fès</h3>
-                    <p class="experience-meta">Software Development Internship</p>
-                    <p class="experience-description">Learned Laravel framework, implemented Spatie roles & permissions
-                        system, worked with Tailwind CSS and Laravel Breeze for authentication.</p>
-                </article>
+                    <article class="experience-item">
+                        <h3 class="experience-title">Internship — OnWork, Fès</h3>
+                        <p class="experience-meta">Software Development Internship</p>
+                        <p class="experience-description">Software development internship focused on Laravel, Spatie roles & permissions, Tailwind CSS, and Laravel Breeze for authentication and scaffolding.</p>
+                    </article>
 
-                <article class="experience-item">
-                    <h3 class="experience-title">Internship — Fourat Metal</h3>
-                    <p class="experience-meta">Sales Observation</p>
-                    <p class="experience-description">Sales observation and business operations experience.</p>
-                </article>
+                    <article class="experience-item">
+                        <h3 class="experience-title">Internship — Fourat Metal</h3>
+                        <p class="experience-meta">Sales Observation</p>
+                        <p class="experience-description">Sales observation internship focusing on business operations and client communication.</p>
+                    </article>
 
-                <article class="experience-item">
-                    <h3 class="experience-title">AI Career Essentials — ALX</h3>
-                    <p class="experience-meta">Certification • May 16, 2024</p>
-                    <p class="experience-description">Completed comprehensive AI career essentials certification
-                        program.</p>
-                </article>
+                    <article class="experience-item">
+                        <h3 class="experience-title">AI Career Essentials — ALX</h3>
+                        <p class="experience-meta">Certification • May 16, 2024</p>
+                        <p class="experience-description">Completed comprehensive AI career essentials certification program.</p>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p style="font-size: 18px; color: var(--gray); margin-bottom: 24px;">
-                    Interested in working together? Feel free to reach out.
-                </p>
-                <form class="contact-form" action="mailto:Otmane.berrimi@gmail.com" method="post" enctype="text/plain">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required aria-required="true"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">Interested in working together? Feel free to reach out.</p>
+                    <form class="contact-form" id="contactForm" action="mailto:Otmane.berrimi@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                    <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer>
@@ -219,7 +234,6 @@
             <div class="footer-links">
                 <a href="https://github.com/berrimi" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:Otmane.berrimi@gmail.com">Email</a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
             <p class="copyright">© 2025 BERRIMI Outmane. All rights reserved.</p>
         </div>
