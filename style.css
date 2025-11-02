@@ -156,6 +156,29 @@ nav {
     background: var(--surface);
 }
 
+/* space for the icons */
+.icon-space {
+margin-left: 8px;
+}
+/* Buttons for links */
+link-button {
+    padding: 10px 24px;
+    background: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Mobile menu */
 .mobile-menu-btn {
     display: none;
@@ -568,3 +591,4 @@ footer {
         --focus: rgba(255,255,255,0.2);
     }
 }
+
